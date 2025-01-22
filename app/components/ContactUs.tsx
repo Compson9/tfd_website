@@ -22,7 +22,7 @@ export default function ContactUs() {
                <p
                   className="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9"
                   >
-                  Have questions about FashionDistrict, or interested in becoming a vendor?  We'd love to hear from you!
+                  Have questions about FashionDistrict, or interested in becoming a vendor?  We would d love to hear from you!
                </p>
                <div className="mb-8 flex w-full max-w-[370px]">
                   <div
@@ -46,7 +46,7 @@ export default function ContactUs() {
                         Our Location
                      </h4>
                      <p className="text-base text-body-color dark:text-dark-6">
-                        99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                     East Legon, Accra, Ghana.
                      </p>
                   </div>
                </div>
@@ -87,7 +87,7 @@ export default function ContactUs() {
                         Phone Number
                      </h4>
                      <p className="text-base text-body-color dark:text-dark-6">
-                        (+62)81 414 257 9980
+                        (+233)5 414 257 9980
                      </p>
                   </div>
                </div>
@@ -113,7 +113,7 @@ export default function ContactUs() {
                         Email Address
                      </h4>
                      <p className="text-base text-body-color dark:text-dark-6">
-                        info@yourdomain.com
+                        fashiondistrict@gmail.com
                      </p>
                   </div>
                </div>

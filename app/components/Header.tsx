@@ -42,7 +42,7 @@ export default function Header() {
 
         {/* Navigation for larger screens */}
         <nav className="hidden md:flex space-x-6">
-          <Link href="#" className="text-white hover:text-gray-200 font-medium">
+          <Link href="/contact-us" className="text-white hover:text-gray-200 font-medium">
             Contact Us
           </Link>
         </nav>

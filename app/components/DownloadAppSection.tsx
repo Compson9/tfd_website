@@ -22,8 +22,9 @@ export default function DownloadAppSection() {
       {/* Google Download */}
       <Link href="#">
       <div className="flex gap-5 items-center bg-black border border-gray-400 rounded-[6px] py-4 px-4 w-[200px] h-[60px] shadow-md transition duration-300 ease-in-out transform hover:scale-105 ">
+          {/* change the playstore icon */}
           <Image
-          src="/playstore.png"
+          src="/Playstore.png"
           alt="playstore"
           width={21}
           height={24}

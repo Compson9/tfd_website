@@ -22,7 +22,7 @@ export default function AboutUs() {
           transition={{ duration: 1 }}
         >
           <Image
-            src="/hero.jpg"
+            src="/gal4.jpg"
             width={600}
             height={400}
             alt="Mission"

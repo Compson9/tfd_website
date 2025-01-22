@@ -24,7 +24,7 @@ export default function DownloadAppSection() {
       <div className="flex gap-5 items-center bg-black border border-gray-400 rounded-[6px] py-4 px-4 w-[200px] h-[60px] shadow-md transition duration-300 ease-in-out transform hover:scale-105 ">
           {/* change the playstore icon */}
           <Image
-          src="/Playstore.png"
+          src="/playstore.png"
           alt="playstore"
           width={21}
           height={24}
@@ -40,7 +40,7 @@ export default function DownloadAppSection() {
         <Link href="#">
         <div className="flex gap-5 items-center bg-black border border-gray-400 rounded-[6px] py-4 px-4 w-[200px] h-[60px] shadow-md transition duration-300 ease-in-out transform hover:scale-105 ">
           <Image
-          src="/Apple.png"
+          src="/apple.png"
           alt="playstore"
           width={24}
           height={21}

@@ -35,7 +35,7 @@ export default function Hero() {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="bg-black text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-semibold hover:bg-gray-800"
+            className="bg-gray-950 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-semibold hover:bg-gray-800"
           >
             Shop Now
           </motion.button>

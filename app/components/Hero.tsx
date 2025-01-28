@@ -13,7 +13,7 @@ export default function Hero() {
         style={{ objectFit: "cover" }}
         priority // Optional: Prioritize loading this image
       />
-      <section className="absolute inset-0 flex flex-col md:flex-row items-center justify-between text-white px-6 mt-10 max-w-6xl lg:mt-0 md:px-12 gap-1 lg:gap-8 mx-auto"> {/* Absolute positioning and white text */}
+      <section className="absolute inset-0 flex flex-col md:flex-row items-center justify-between text-white px-6 mt-32 max-w-6xl lg:mt-0 md:px-12 gap-1 lg:gap-8 mx-auto"> {/* Absolute positioning and white text */}
         <div className="flex-1 text-center pt-20 md:text-left z-10"> {/* Added z-index */}
           <motion.h2
             initial={{ opacity: 0, x: -20 }}

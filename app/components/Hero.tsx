@@ -1,24 +1,25 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const images = ["/hero.jpg"]; // Add your image names here
 
 export default function Hero() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 4 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  //   }, 5000); // Change image every 4 seconds
 
-    return () => clearInterval(interval); // Clear the interval on component unmount
-  }, []);
+  //   return () => clearInterval(interval); // Clear the interval on component unmount
+  // }, []);
 
   return (
-    <div className="bg-gray-200 mt-10 min-h-screen">
-      <section className="relative h-screen flex flex-col md:flex-row items-center justify-between text-black px-6 mt-10 max-w-6xl lg:mt-[-5px] md:px-12 gap-1 lg:gap-12 mx-auto">
+    <div className="bg-gray-200 mt-10 w-full min-h-screen">
+      <section className="relative h-screen flex flex-col md:flex-row items-center justify-between text-black px-6 mt-10 max-w-6xl lg:mt-[-5px] md:px-12 gap-1 lg:gap-8 mx-auto">
         <div className="flex-1 text-center md:text-left">
           <motion.h2
             initial={{ opacity: 0, x: -20 }}
@@ -49,15 +50,12 @@ export default function Hero() {
           className="flex-shrink-0 flex-1 md:text-right mt-6 md:mt-0 relative"
           style={{ right: "-100px" }}
         >
-          <motion.img
-            key={currentImageIndex}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-            src={images[currentImageIndex]}
-            alt="Fashion"
-            className="h-auto w-3/4 mx-auto md:w-full md:max-w-2xl"
+          <Image
+          src="/hero.jpg"
+          width={470}
+          height={500}
+          alt="Fashion"
+          className="rounded-lg shadow-lg object-cover"
           />
         </div>
       </section>

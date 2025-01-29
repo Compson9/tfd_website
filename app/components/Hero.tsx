@@ -4,7 +4,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const images = ["/hero.jpg"]; // Add your image names here
+// const images = ["/hero.jpg"]; // Add your image names here
 
 export default function Hero() {
   // const [currentImageIndex, setCurrentImageIndex] = useState(0);

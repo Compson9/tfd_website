@@ -25,7 +25,6 @@ export default function Header() {
             // className="h-10"
           />
           </Link>
-
           <Link
           href={"/"}
           >

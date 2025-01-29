@@ -37,11 +37,11 @@ export default function DownloadAppSection() {
       <div className="flex-1 flex justify-center  relative">
         <div className="relative">
           <Image
-            src="/home2.png"
+            src="/app1.png"
             alt="Phone Mockup 1"
-            width={200}
-            height={200}
-            className="rounded-lg shadow-lg z-10"
+            width={400}
+            height={400}
+            
           />
           
         </div>

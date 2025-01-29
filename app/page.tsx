@@ -1,3 +1,4 @@
+import AboutUs from "./components/AboutUs";
 import DownloadAppSection from "./components/DownloadAppSection";
 import Footer from "./components/Footer";
 import GallerySection from "./components/GallerySection";
@@ -11,6 +12,7 @@ export default function page() {
     <Header/>
    <Hero/>
    <GallerySection/>
+   <AboutUs/>
    <DownloadAppSection/>
    <Footer/>
 

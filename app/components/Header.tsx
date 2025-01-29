@@ -12,16 +12,34 @@ export default function Header() {
   return (
     <header className="bg-gray-900 shadow-md fixed w-full top-0 z-50">
       <div className="container mx-8 max-w-6xl px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/">
-          <Image
-            width={110}
-            height={120}
-            src="/logo1.png"
+        {/* Logo and Title */}
+        <div className="flex items-center">
+          <Link 
+          href="/"
+          >
+            <Image
+            width={60}
+            height={60}
+            src="/log.png"
             alt="Logo"
-            className="h-10"
+            // className="h-10"
           />
-        </Link>
+          </Link>
+
+          <Link
+          href={"/"}
+          >
+          <Image
+            width={100}
+            height={40}
+            src="/logo1.png"
+            alt="Text Logo"
+            // className="h-10"
+          />
+          </Link>
+          
+        
+        </div>
 
         {/* Navigation for larger screens */}
         <nav className="hidden md:flex space-x-6">
@@ -39,13 +57,8 @@ export default function Header() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <motion.div
-            animate={{
-              rotate: isOpen ? 90 : 0,
-            }}
-            transition={{
-              duration: 0.5,
-              ease: "easeInOut",
-            }}
+            animate={{ rotate: isOpen ? 90 : 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             <MenuIcon color="white" size={28} />
           </motion.div>

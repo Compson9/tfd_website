@@ -4,7 +4,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-// const images = ["/hero.jpg"]; // Add your image names here
+// const images = ["/hero.jpg"]; // Add your image names here`
 
 export default function Hero() {
   // const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -52,7 +52,7 @@ export default function Hero() {
         >
           <Image
           src="/hero.jpg"
-          width={470}
+          width={450}
           height={500}
           alt="Fashion"
           className="rounded-lg shadow-lg object-cover"

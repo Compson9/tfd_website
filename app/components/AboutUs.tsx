@@ -10,7 +10,7 @@ export default function AboutUs() {
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-5xl font-bold text-gray-900">About Us</h2>
         <p className="text-lg text-gray-600 mt-4">
-        At The Fashion District (TFD), we redefine luxury fashion by blending modern trends with timeless elegance. Our mission is to create an ecosystem that connects designers, stylists, and fashion lovers worldwide.
+        At The Fashion District (TFD), we redefine luxury fashion by blending modern trends with timeless elegance. We are creating an ecosystem that connects designers, stylists, and fashion lovers worldwide.
         </p>
       </div>
 

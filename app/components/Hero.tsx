@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const images = ["/first.png", "/second.png"]; // Add your image names here
+const images = ["/hero.jpg"]; // Add your image names here
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -17,7 +17,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="bg-gray-200 min-h-screen">
+    <div className="bg-gray-200 mt-10 min-h-screen">
       <section className="relative h-screen flex flex-col md:flex-row items-center justify-between text-black px-6 mt-10 max-w-6xl lg:mt-[-5px] md:px-12 gap-1 lg:gap-12 mx-auto">
         <div className="flex-1 text-center md:text-left">
           <motion.h2

@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="bg-gray-900 shadow-md fixed w-full top-0 z-50">
-      <div className="container mx-8 max-w-6xl px-6 py-4 flex items-center justify-between">
+      <div className="container mx-8 max-w-full lg:max-w-6xl px-6 py-4 flex items-center justify-between">
         {/* Logo and Title */}
         <div className="flex items-center">
           <Link 
@@ -49,15 +49,12 @@ export default function Header() {
 
         {/* Hamburger Icon for Mobile */}
         <button
-          className="md:hidden text-gray-800 hover:text-gray-500"
+          className="md:hidden mr-10 text-gray-800 hover:text-gray-500"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <motion.div
-            animate={{ rotate: isOpen ? 90 : 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          >
+          <div>
             <MenuIcon color="white" size={28} />
-          </motion.div>
+          </div>
         </button>
       </div>
 
@@ -65,15 +62,9 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
           <nav className="flex flex-col items-center py-4 space-y-4">
+            
             <Link
-              href="/about"
-              className="text-gray-800 hover:text-gray-500 font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              About Us
-            </Link>
-            <Link
-              href="/contact"
+              href="/contact-us"
               className="text-gray-800 hover:text-gray-500 font-medium"
               onClick={() => setIsOpen(false)}
             >

@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "FashionDistrict Ghana - Your Premier Fashion Destination", // More descriptive title
+  title: "FashionDistrict Ghana - Your Premier Fashion Destination",
   description: "Discover the latest fashion trends, connect with top vendors, and elevate your style with FashionDistrict in East Legon, Accra, Ghana.", // Improved description
   keywords: [ // Added keywords
     "fashion",

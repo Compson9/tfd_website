@@ -9,41 +9,38 @@ export default function DownloadAppSection() {
       {/* Text Content */}
       <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
         <h3 className="text-3xl md:text-4xl font-bold mb-4">
-          Unlock a new level of convenience with our app
+          Unlock a new level of confidence with our app
         </h3>
         <p className="text-lg text-gray-700 mb-6">
           Experience seamless navigation and effortless shopping directly from your phone.
         </p>
-        <a
-          href="#"
-          className="text-green-600 font-medium hover:underline"
-        >
-          Read more
-        </a>
 
-        {/* QR Code */}
-        <div className="w-40 h-40 bg-white shadow-md rounded-lg flex items-center justify-center mt-6 mx-auto md:mx-0">
+        {/* Download Buttons */}
+      <div className="">
+        <div className="flex gap-5 items-center bg-black border border-gray-400 rounded-[6px] py-4 px-4 w-[200px] h-[60px] shadow-md transition duration-300 ease-in-out transform hover:scale-105 ">
           <Image
-            src="/qr.png"
-            alt="QR Code"
-            width={300}
-            height={300}
-            className="object-cover"
+          src="/playstore.png"
+          alt="playstore"
+          width={40}
+          height={40}
           />
+          <div>
+            <p className="text-white">GET IT ON</p>
+            <p className="text-white font-bold">Google Play</p>
+          </div>
         </div>
+      </div>
       </div>
 
       {/* Phone Mockups */}
-      <div className="flex-1 flex justify-center  relative">
+      <div className="flex-1 flex justify-center relative">
         <div className="relative">
           <Image
             src="/app1.png"
             alt="Phone Mockup 1"
             width={400}
             height={400}
-            
           />
-          
         </div>
       </div>
     </section>

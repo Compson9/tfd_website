@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function DownloadAppSection() {
@@ -16,19 +17,39 @@ export default function DownloadAppSection() {
         </p>
 
         {/* Download Buttons */}
-      <div className="">
-        <div className="flex gap-5 items-center bg-black border border-gray-400 rounded-[6px] py-4 px-4 w-[200px] h-[60px] shadow-md transition duration-300 ease-in-out transform hover:scale-105 ">
+      <div className="flex gap-10">
+
+      {/* Google Download */}
+      <Link href="#">
+      <div className="flex gap-5 items-center bg-black border border-gray-400 rounded-[6px] py-4 px-4 w-[200px] h-[60px] shadow-md transition duration-300 ease-in-out transform hover:scale-105 ">
           <Image
           src="/playstore.png"
           alt="playstore"
-          width={40}
-          height={40}
+          width={21}
+          height={24}
           />
           <div>
-            <p className="text-white">GET IT ON</p>
-            <p className="text-white font-bold">Google Play</p>
+            <p className="text-white text-[14px]">GET IT ON</p>
+            <p className="text-white font-bold text-[18px]">Google Play</p>
           </div>
         </div>
+      
+      </Link>
+        {/* Apple download */}
+        <Link href="#">
+        <div className="flex gap-5 items-center bg-black border border-gray-400 rounded-[6px] py-4 px-4 w-[200px] h-[60px] shadow-md transition duration-300 ease-in-out transform hover:scale-105 ">
+          <Image
+          src="/Apple.png"
+          alt="playstore"
+          width={24}
+          height={21}
+          />
+          <div className="flex flex-col gap-[-100px]">
+            <p className="text-white text-[14px]">Download on the</p>
+            <p className="text-white font-bold text-[20px]">App Store</p>
+          </div>
+        </div>
+        </Link>
       </div>
       </div>
 

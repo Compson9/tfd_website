@@ -21,9 +21,9 @@ export default function Hero() {
             transition={{ duration: 1 }}
             className="text-4xl md:text-6xl font-bold mb-4 md:mb-6"
           >
-            Loxury Redefined
+            Luxury Redefined
           </motion.h2>
-          {/* changed */}
+          
           <motion.p
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}

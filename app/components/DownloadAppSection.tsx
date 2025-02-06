@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 
 export default function DownloadAppSection() {
   return (
-    <motion.section   initial={{ opacity: 0, x: -20 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 1, delay: 0.3 }}
+    <motion.section   initial={{ scale: 0.7, opacity: 0 }}
+    whileInView={{ scale: 1, opacity: 1 }}
+    transition={{ duration: 0.7 }}
      id="download-app" className="py-16 px-6 md:px-12 bg-gray-100 flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto">
       {/* Text Content */}
       <div className="flex-1 text-center md:text-left mb-8 md:mb-0">

@@ -24,8 +24,8 @@ export default function GallerySection() {
             className="w-full h-auto object-cover rounded-lg shadow-md"
           />
           <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center text-white p-6">
-            <h3 className="text-2xl md:text-3xl font-bold mb-2">Lived-In Stripes</h3>
-            <p className="text-sm md:text-base">An instant wardrobe staple.</p>
+            <h3 className="lg:text-4xl text-2xl md:text-3xl font-bold mb-2">Street</h3>
+            
           </div>
         </div>
         <div className="relative">
@@ -37,11 +37,15 @@ export default function GallerySection() {
             className="w-full h-auto object-cover rounded-lg shadow-md"
           />
           <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center text-white p-6">
-            <h3 className="text-2xl md:text-3xl font-bold mb-2">Our Core Sueded Tee</h3>
-            <p className="text-sm md:text-base">Brushed to perfection.</p>
+            <h3 className="lg:text-4xl text-2xl md:text-3xl font-bold mb-2">Classy</h3>
+          
           </div>
         </div>
       </motion.div>
+
+      <div className="mt-10">
+        <h1 className="text-2xl lg:text-4xl text-center font-semibold">Quality</h1>
+      </div>
 
       {/* Additional Image Row */}
       <motion.div
@@ -96,11 +100,11 @@ export default function GallerySection() {
           transition={{ duration: 0.5 }}
         >
           <Image
-            src="/reep1.jpg"
+            src="/float.jpg"
             width={500}
-            height={500}
+            height={100}
             alt="Gallery Image 4"
-            className="w-full h-auto object-cover rounded-lg shadow-sm"
+            className="w-full h-full object-cover rounded-lg shadow-sm"
           />
         </motion.div>
       </motion.div>

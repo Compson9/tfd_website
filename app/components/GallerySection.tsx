@@ -99,6 +99,7 @@ export default function GallerySection() {
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
+          {/* The image section  */}
           <Image
             src="/float.jpg"
             width={500}

@@ -31,14 +31,15 @@ export default function Hero() {
           >
             Discover timeless fashion that blends elegance with modern design. Explore our collections and redefine your style.
           </motion.p>
-          <motion.button
+          <motion.a
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
             className="bg-gray-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-semibold hover:bg-gray-800"
+            href="#download-app"
           >
             Shop Now
-          </motion.button>
+          </motion.a>
         </div>
         {/* Removed the image div */}
       </section>

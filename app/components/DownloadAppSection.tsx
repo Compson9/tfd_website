@@ -3,10 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+
 
 export default function DownloadAppSection() {
   return (
-    <section className="py-16 px-6 md:px-12 bg-gray-100 flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto">
+    <motion.section   initial={{ opacity: 0, x: -20 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 1, delay: 0.3 }}
+     id="download-app" className="py-16 px-6 md:px-12 bg-gray-100 flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto">
       {/* Text Content */}
       <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
         <h3 className="text-3xl md:text-4xl font-bold mb-4">
@@ -65,7 +70,7 @@ export default function DownloadAppSection() {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

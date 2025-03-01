@@ -10,7 +10,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-900 shadow-md fixed w-full top-0 z-50">
+    <header className="bg-gray-900 shadow-md flex flex-col justify-center lg:h-[90px] h-16 fixed w-full top-0 z-50">
       <div className="container mx-8 max-w-full lg:max-w-6xl px-6 py-4 flex items-center justify-between">
         {/* Logo and Title */}
         <div className="flex items-center">
@@ -18,21 +18,22 @@ export default function Header() {
           href="/"
           >
             <Image
-            width={60}
-            height={60}
+            width={100}
+            height={50}
             src="/log.png"
             alt="Logo"
-            // className="h-10"
+            className="h-[50px] lg:h-[100px] w-[50px] lg:w-[100px]"
           />
           </Link>
           <Link
           href={"/"}
           >
           <Image
-            width={100}
-            height={40}
+            width={170}
+            height={50}
             src="/logo1.png"
             alt="Text Logo"
+              className="h-[30px] lg:h-[50px] w-[100px] lg:w-[170px]"
             // className="h-10"
           />
           </Link>
